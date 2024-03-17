@@ -34,7 +34,7 @@ def read(message):
 def chatting(text):
     try:
         print(f"inside try {text}")
-        res=chat.send_message(F"tell me {text} in strictly under 20 words. Give answers related to farming, agriculture or crops. if not conformed, then give approximate answers. Avoide using * in your response",generation_config=genai.types.GenerationConfig(
+        res=chat.send_message(F"tell me {text} in strictly under 30 words. Give answers related to farming, agriculture or crops. if not conformed, then give approximate answers. Avoide using * in your response",generation_config=genai.types.GenerationConfig(
         candidate_count=1,
         stop_sequences=['space'],
         max_output_tokens=200,
