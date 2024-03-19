@@ -5,3 +5,5 @@ uvicorn
 google-generativeai
 Pillow
 pydantic
+diff-match-patch
+difflib
