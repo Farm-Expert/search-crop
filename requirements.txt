@@ -6,4 +6,4 @@ google-generativeai
 Pillow
 pydantic
 diff-match-patch
-difflib
+scikit-learn
