@@ -20,7 +20,7 @@ model=genai.GenerativeModel("gemini-pro")
 history=[]
 chat=model.start_chat(history=history)
 
-chat.send_message("your name is Agro Expert.I want you to respond to my every question under 30 words. Give answers related to agriculture farming or crops. I will not accept answers that are not related to  farming or crops or agriculture. use emojis in your reply where possible")
+chat.send_message("your name is Agro Expert.I want you to respond to my every question under 30 words. Give answers related to agriculture farming or crops. I will not accept answers that are not related to farming or crops or agriculture. use different emojis in your reply where possible")
 
 def read(message):
     res=""
@@ -34,7 +34,7 @@ def read(message):
 def chatting(text):
     try:
         print(f"inside try {text}")
-        res=chat.send_message(F"tell me {text} in strictly under 30 words. Give answers related to farming, agriculture or crops. if not conformed, then give approximate answers. Avoide using * in your response",generation_config=genai.types.GenerationConfig(
+        res=chat.send_message(F"tell me {text} in strictly under 30 words. relate the question with farming, agriculture or crops and give answers related to farming, agriculture or crops. if not confirmed, then give approximate answers. Avoid using * in your response",generation_config=genai.types.GenerationConfig(
         candidate_count=1,
         stop_sequences=['space'],
         max_output_tokens=200,
