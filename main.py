@@ -9,7 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 import search_crop as sc
 import crop_json as cj
-genai.configure(api_key="AIzaSyBDqOhWlvNqG9Crmb7Ip01vNYtMSHKtx1A")
+genai.configure(api_key="AIzaSyCzdI-Itcf8eSbrg8IHeNTfOhzeqkDKTg4")
 
 
 df=pd.read_csv("crop.csv")
